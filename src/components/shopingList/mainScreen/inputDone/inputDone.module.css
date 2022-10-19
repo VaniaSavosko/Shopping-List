@@ -1,0 +1,50 @@
+.inputDone {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #303030;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.text_desc {
+    display: flex;
+    align-content: center;
+    width: 80%;
+}
+
+.right {
+    display: flex;
+    align-content: center;
+}
+
+.number {
+    max-width: 50px;
+    margin: 0 5px;
+    outline: none;
+    
+}
+
+.inputText {
+    width: 100%;
+    color: #303030;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.inputDone button {
+    width: 39px;
+    height: 19px;
+    background-color: #fff;
+    border: none;
+}
+
+.inputDone button svg {
+    color: #303030;
+    height: 16px;
+}
+
+.inputDone button svg:hover {
+    color: #5fa8d3;
+}
