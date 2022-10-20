@@ -6,10 +6,14 @@ import style from "./ShopingList.module.css"
 
 const ShopingList = () => {
     return (
-        <div className={style.container}>
-            <MainScreen />
-            <SideMenu />
-        </div>
+        <main className={style.container}>
+            <article>
+                <MainScreen />
+            </article>
+            <aside>
+                <SideMenu />
+            </aside>
+        </main>
     )
 }
 
