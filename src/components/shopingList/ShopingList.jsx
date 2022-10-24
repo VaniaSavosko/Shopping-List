@@ -1,5 +1,5 @@
 import MainScreen from "./mainScreen/mainScreen";
-import SideMenu from "./sideMenu/sideMenu";
+import SideMenuContainer from "./sideMenu/SideMenuContainer";
 import style from "./ShopingList.module.css"
 
 
@@ -11,7 +11,7 @@ const ShopingList = () => {
                 <MainScreen />
             </article>
             <aside>
-                <SideMenu />
+                <SideMenuContainer />
             </aside>
         </main>
     )

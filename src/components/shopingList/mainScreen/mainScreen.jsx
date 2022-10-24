@@ -5,14 +5,16 @@ import style from "./mainScreen.module.css";
 
 
 
-const MainScreen = () => {
+const MainScreen = (props) => {
+    
+    
     return (
         <div className={style.mainScreen}>
             <ListName />
             <div className="mainScreen_items">
                 <AddItems />
                 <InputDone />
-                <InputDone />
+                    
             </div>
         </div>
     )
