@@ -1,10 +1,27 @@
+import { useState } from 'react'
 import style from "./addItems.module.css"
 
-const AddItems = () => {
+const AddItems = (props) => {
+    const [userInput, setUserInput] = useState('')
+
+    const handleChange = (action) => {
+        setUserInput(action.currentTarget.value)
+    }
+    const handleSubmit = (action) => {
+        action.preventDefault()
+        props.addTask(userInput)
+        setUserInput("")
+    }
+
+    const handleKeyPress = (action) => {
+        if (action.key === "Enter") {
+            handleSubmit(action)        
+        }
+    }
     return (
-        <div className={style.input}>
+        <form onSubmit={handleSubmit} className={style.input}>
             <div className={style.input_text}>
-                <input type="text" placeholder="Add item" className={style.add_item}></input>
+                <input value={userInput} type="text" onChange={handleChange} onKeyDown={handleKeyPress} placeholder="Add item" className={style.add_item}></input>
             </div>
             <div>
                 <input type="number" min={1} placeholder="0" className={style.number}></input>
@@ -13,7 +30,7 @@ const AddItems = () => {
                     <option>шт</option>
                 </select>
             </div>
-        </div>
+        </form>
     )
 }
 

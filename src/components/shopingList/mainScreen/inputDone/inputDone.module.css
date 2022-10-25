@@ -31,6 +31,16 @@
     color: #303030;
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.strike {
+    width: 100%;
+    color: #303030;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: line-through;
+    cursor: pointer;
 }
 
 .inputDone button {
